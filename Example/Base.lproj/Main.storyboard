@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,24 +13,51 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pYd-MP-JCN"/>
+                        <viewControllerLayoutGuide type="bottom" id="A6v-2a-4XL"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbu-0Z-lHI">
-                                <rect key="frame" x="158" y="328.5" width="58" height="30"/>
-                                <state key="normal" title="Example"/>
-                                <connections>
-                                    <action selector="exampleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKk-PC-g1G"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9p3-ot-W23">
+                                <rect key="frame" x="85" y="291.5" width="204" height="84"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpU-pV-mEe">
+                                        <rect key="frame" x="8" y="46" width="188" height="30"/>
+                                        <state key="normal" title="Action Sheet Style Example"/>
+                                        <connections>
+                                            <action selector="actionSheetStyleExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YUY-0A-cTs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbu-0Z-lHI">
+                                        <rect key="frame" x="8" y="8" width="188" height="30"/>
+                                        <state key="normal" title="Alert Style Example"/>
+                                        <connections>
+                                            <action selector="alertStyleExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GDZ-BO-VEN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Xbu-0Z-lHI" secondAttribute="trailing" constant="8" id="DUQ-TP-bey"/>
+                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="top" secondItem="9p3-ot-W23" secondAttribute="top" constant="8" id="Di9-Xe-B47"/>
+                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="leading" secondItem="9p3-ot-W23" secondAttribute="leading" constant="8" id="JxZ-kD-lkn"/>
+                                    <constraint firstAttribute="trailing" secondItem="WpU-pV-mEe" secondAttribute="trailing" constant="8" id="MqV-jY-XCj"/>
+                                    <constraint firstAttribute="bottom" secondItem="WpU-pV-mEe" secondAttribute="bottom" constant="8" id="bqJ-4s-W9u"/>
+                                    <constraint firstItem="WpU-pV-mEe" firstAttribute="leading" secondItem="9p3-ot-W23" secondAttribute="leading" constant="8" id="kS0-vX-3BC"/>
+                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="width" secondItem="WpU-pV-mEe" secondAttribute="width" id="lA4-FP-XsP"/>
+                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="height" secondItem="WpU-pV-mEe" secondAttribute="height" id="pqv-Mz-b0x"/>
+                                    <constraint firstItem="WpU-pV-mEe" firstAttribute="top" secondItem="Xbu-0Z-lHI" secondAttribute="bottom" constant="8" id="wVi-rY-GSZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Xbu-0Z-lHI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BUO-av-hcc"/>
-                            <constraint firstItem="Xbu-0Z-lHI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CEc-84-3jS"/>
+                            <constraint firstItem="9p3-ot-W23" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Quc-TO-g6t"/>
+                            <constraint firstItem="9p3-ot-W23" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dXs-Nm-Eib"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
