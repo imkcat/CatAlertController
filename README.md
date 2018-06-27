@@ -1,4 +1,4 @@
-User UIAlertController like the boss.
+Use UIAlertController like the boss.
 
 - [Requirements](#requirements)
 - [Usage](#usage)
@@ -16,7 +16,7 @@ Here is the alert style sample code in iPhone:
 
 ```swift
 AlertController(title: "AlertController", 
-                message: "Hello AlertController", 
+                message: "This is AlertController", 
                 preferredStyle: UIAlertControllerStyle.alert)
                 .addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
                 .addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
