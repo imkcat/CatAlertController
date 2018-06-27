@@ -1,3 +1,6 @@
+<p align="center">
+	<img src="https://github.com/ImKcat/AlertController/raw/master/AlertController-Logo.png" alt="Logo">
+</p>
 Use UIAlertController like the boss.
 
 - [Requirements](#requirements)
