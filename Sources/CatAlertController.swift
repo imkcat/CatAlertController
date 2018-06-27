@@ -42,6 +42,17 @@ public class CatAlertController: NSObject {
         self.alertController.addAction(action)
         return self
     }
+    
+    /// Add multiple `UIAlertAction` to the `CatAlertController`.
+    ///
+    /// - Parameter actions: The `UIAlertAction` array for adding.
+    /// - Returns: Instance of the `CatAlertController`.
+    public func addActions(_ actions: [UIAlertAction]) -> CatAlertController {
+        for action in actions {
+            self.alertController.addAction(action)
+        }
+        return self
+    }
 
     /// Present the `CatAlertController`.
     ///
