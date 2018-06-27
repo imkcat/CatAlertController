@@ -32,7 +32,7 @@
 		92C11ED220E23E9000BEA8EA = {
 			isa = PBXGroup;
 			children = (
-				92C11EDE20E23E9000BEA8EA /* AlertController */,
+				92C11EDE20E23E9000BEA8EA /* Sources */,
 				92C11EDD20E23E9000BEA8EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,19 +45,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		92C11EDE20E23E9000BEA8EA /* AlertController */ = {
+		92C11EDE20E23E9000BEA8EA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				92C11EDF20E23E9000BEA8EA /* AlertController.h */,
 				92C11EE020E23E9000BEA8EA /* Info.plist */,
-				92C11F0320E23F1300BEA8EA /* Sources */,
-			);
-			path = AlertController;
-			sourceTree = "<group>";
-		};
-		92C11F0320E23F1300BEA8EA /* Sources */ = {
-			isa = PBXGroup;
-			children = (
+				92C11EDF20E23E9000BEA8EA /* AlertController.h */,
 				92C11F0420E23F2E00BEA8EA /* AlertController.swift */,
 			);
 			path = Sources;

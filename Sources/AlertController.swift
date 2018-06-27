@@ -42,6 +42,17 @@ public class AlertController: NSObject {
         self.alertController.addAction(action)
         return self
     }
+    
+    /// Add multiple `UIAlertAction` to the `AlertController`.
+    ///
+    /// - Parameter actions: The `UIAlertAction` array for adding.
+    /// - Returns: Instance of the `AlertController`.
+    public func addActions(_ actions: [UIAlertAction]) -> AlertController {
+        for action in actions {
+            self.alertController.addAction(action)
+        }
+        return self
+    }
 
     /// Present the `AlertController`.
     ///
