@@ -22,46 +22,84 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9p3-ot-W23">
-                                <rect key="frame" x="85" y="291.5" width="204" height="84"/>
+                                <rect key="frame" x="65" y="234.5" width="244" height="198"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpU-pV-mEe">
-                                        <rect key="frame" x="8" y="46" width="188" height="30"/>
+                                        <rect key="frame" x="8" y="160" width="228" height="30"/>
                                         <state key="normal" title="Action Sheet Style Example"/>
                                         <connections>
-                                            <action selector="actionSheetStyleExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YUY-0A-cTs"/>
+                                            <action selector="actionSheetStyleExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQJ-5V-hTm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbu-0Z-lHI">
-                                        <rect key="frame" x="8" y="8" width="188" height="30"/>
+                                        <rect key="frame" x="8" y="46" width="228" height="30"/>
+                                        <state key="normal" title="Alert Style Flash Example"/>
+                                        <connections>
+                                            <action selector="alertStyleFlashExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2FD-Kp-lEC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhH-h1-dOC">
+                                        <rect key="frame" x="8" y="84" width="228" height="30"/>
                                         <state key="normal" title="Alert Style Example"/>
                                         <connections>
-                                            <action selector="alertStyleExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GDZ-BO-VEN"/>
+                                            <action selector="alertStyleExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lqB-0u-Rdq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuH-ZJ-WZu">
+                                        <rect key="frame" x="8" y="122" width="228" height="30"/>
+                                        <state key="normal" title="Action Sheet Style Flash Example"/>
+                                        <connections>
+                                            <action selector="actionSheetStyleFlashExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Fy-fS-iDy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-Hi-DKe">
+                                        <rect key="frame" x="8" y="8" width="228" height="30"/>
+                                        <state key="normal" title="Alert Popup Example"/>
+                                        <connections>
+                                            <action selector="alertPopupExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbJ-YK-Hp4"/>
+                                            <action selector="alertStyleFlashExampleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bfw-0R-Jy2"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Xbu-0Z-lHI" secondAttribute="trailing" constant="8" id="DUQ-TP-bey"/>
-                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="top" secondItem="9p3-ot-W23" secondAttribute="top" constant="8" id="Di9-Xe-B47"/>
-                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="leading" secondItem="9p3-ot-W23" secondAttribute="leading" constant="8" id="JxZ-kD-lkn"/>
-                                    <constraint firstAttribute="trailing" secondItem="WpU-pV-mEe" secondAttribute="trailing" constant="8" id="MqV-jY-XCj"/>
-                                    <constraint firstAttribute="bottom" secondItem="WpU-pV-mEe" secondAttribute="bottom" constant="8" id="bqJ-4s-W9u"/>
-                                    <constraint firstItem="WpU-pV-mEe" firstAttribute="leading" secondItem="9p3-ot-W23" secondAttribute="leading" constant="8" id="kS0-vX-3BC"/>
-                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="width" secondItem="WpU-pV-mEe" secondAttribute="width" id="lA4-FP-XsP"/>
-                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="height" secondItem="WpU-pV-mEe" secondAttribute="height" id="pqv-Mz-b0x"/>
-                                    <constraint firstItem="WpU-pV-mEe" firstAttribute="top" secondItem="Xbu-0Z-lHI" secondAttribute="bottom" constant="8" id="wVi-rY-GSZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="WuH-ZJ-WZu" secondAttribute="trailing" constant="8" id="46b-ez-do5"/>
+                                    <constraint firstAttribute="trailing" secondItem="XhH-h1-dOC" secondAttribute="trailing" constant="8" id="5xX-K0-bfc"/>
+                                    <constraint firstItem="WuH-ZJ-WZu" firstAttribute="leading" secondItem="9p3-ot-W23" secondAttribute="leading" constant="8" id="6Zl-bw-4ji"/>
+                                    <constraint firstItem="JHH-Hi-DKe" firstAttribute="top" secondItem="9p3-ot-W23" secondAttribute="top" constant="8" id="6gn-kZ-pDL"/>
+                                    <constraint firstItem="WuH-ZJ-WZu" firstAttribute="height" secondItem="WpU-pV-mEe" secondAttribute="height" id="DBs-tC-Cfs"/>
+                                    <constraint firstItem="WuH-ZJ-WZu" firstAttribute="top" secondItem="XhH-h1-dOC" secondAttribute="bottom" constant="8" id="IdX-u7-cPB"/>
+                                    <constraint firstItem="JHH-Hi-DKe" firstAttribute="width" secondItem="Xbu-0Z-lHI" secondAttribute="width" id="JvX-KW-DvH"/>
+                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="width" secondItem="XhH-h1-dOC" secondAttribute="width" id="MLX-Do-jCP"/>
+                                    <constraint firstItem="XhH-h1-dOC" firstAttribute="top" secondItem="Xbu-0Z-lHI" secondAttribute="bottom" constant="8" id="NI0-5D-0ve"/>
+                                    <constraint firstItem="XhH-h1-dOC" firstAttribute="width" secondItem="WuH-ZJ-WZu" secondAttribute="width" id="NgG-Hi-fme"/>
+                                    <constraint firstItem="XhH-h1-dOC" firstAttribute="height" secondItem="WuH-ZJ-WZu" secondAttribute="height" id="OZ7-7G-TdT"/>
+                                    <constraint firstAttribute="trailing" secondItem="WpU-pV-mEe" secondAttribute="trailing" constant="8" id="SPB-h4-iz5"/>
+                                    <constraint firstItem="JHH-Hi-DKe" firstAttribute="leading" secondItem="9p3-ot-W23" secondAttribute="leading" constant="8" id="Ys1-0T-Owf"/>
+                                    <constraint firstAttribute="trailing" secondItem="JHH-Hi-DKe" secondAttribute="trailing" constant="8" id="ah9-RZ-umk"/>
+                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="height" secondItem="XhH-h1-dOC" secondAttribute="height" id="bv1-Rs-9mO"/>
+                                    <constraint firstItem="JHH-Hi-DKe" firstAttribute="height" secondItem="Xbu-0Z-lHI" secondAttribute="height" id="dNE-1F-44I"/>
+                                    <constraint firstAttribute="bottom" secondItem="WpU-pV-mEe" secondAttribute="bottom" constant="8" id="eYw-Kk-U4l"/>
+                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="leading" secondItem="9p3-ot-W23" secondAttribute="leading" constant="8" id="iOy-6y-vXH"/>
+                                    <constraint firstItem="Xbu-0Z-lHI" firstAttribute="top" secondItem="JHH-Hi-DKe" secondAttribute="bottom" constant="8" id="jvn-6D-0GE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xbu-0Z-lHI" secondAttribute="trailing" constant="8" id="nBl-mq-jrx"/>
+                                    <constraint firstItem="XhH-h1-dOC" firstAttribute="leading" secondItem="9p3-ot-W23" secondAttribute="leading" constant="8" id="qbV-3q-AHs"/>
+                                    <constraint firstItem="WuH-ZJ-WZu" firstAttribute="width" secondItem="WpU-pV-mEe" secondAttribute="width" id="wd6-h0-RD5"/>
+                                    <constraint firstItem="WpU-pV-mEe" firstAttribute="top" secondItem="WuH-ZJ-WZu" secondAttribute="bottom" constant="8" id="wkG-DT-oei"/>
+                                    <constraint firstItem="WpU-pV-mEe" firstAttribute="leading" secondItem="9p3-ot-W23" secondAttribute="leading" constant="8" id="zUV-ib-aBa"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9p3-ot-W23" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Quc-TO-g6t"/>
-                            <constraint firstItem="9p3-ot-W23" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dXs-Nm-Eib"/>
+                            <constraint firstItem="9p3-ot-W23" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cfe-l6-QAl"/>
+                            <constraint firstItem="9p3-ot-W23" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ocz-oF-STH"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="36" y="32.833583208395808"/>
         </scene>
     </scenes>
 </document>
