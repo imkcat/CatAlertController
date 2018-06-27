@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "92C11EDB20E23E9000BEA8EA"
-               BuildableName = "AlertController.framework"
-               BlueprintName = "AlertController"
-               ReferencedContainer = "container:AlertController.xcodeproj">
+               BuildableName = "CatAlertController.framework"
+               BlueprintName = "CatAlertController"
+               ReferencedContainer = "container:CatAlertController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "92C11EE420E23E9000BEA8EA"
                BuildableName = "AlertControllerTests.xctest"
                BlueprintName = "AlertControllerTests"
-               ReferencedContainer = "container:AlertController.xcodeproj">
+               ReferencedContainer = "container:CatAlertController.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "92C11EDB20E23E9000BEA8EA"
-            BuildableName = "AlertController.framework"
-            BlueprintName = "AlertController"
-            ReferencedContainer = "container:AlertController.xcodeproj">
+            BuildableName = "CatAlertController.framework"
+            BlueprintName = "CatAlertController"
+            ReferencedContainer = "container:CatAlertController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "92C11EDB20E23E9000BEA8EA"
-            BuildableName = "AlertController.framework"
-            BlueprintName = "AlertController"
-            ReferencedContainer = "container:AlertController.xcodeproj">
+            BuildableName = "CatAlertController.framework"
+            BlueprintName = "CatAlertController"
+            ReferencedContainer = "container:CatAlertController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "92C11EDB20E23E9000BEA8EA"
-            BuildableName = "AlertController.framework"
-            BlueprintName = "AlertController"
-            ReferencedContainer = "container:AlertController.xcodeproj">
+            BuildableName = "CatAlertController.framework"
+            BlueprintName = "CatAlertController"
+            ReferencedContainer = "container:CatAlertController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

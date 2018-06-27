@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92C11EED20E23E9000BEA8EA /* AlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C11EDF20E23E9000BEA8EA /* AlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92C11F0520E23F2E00BEA8EA /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C11F0420E23F2E00BEA8EA /* AlertController.swift */; };
+		92C11EED20E23E9000BEA8EA /* CatAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C11EDF20E23E9000BEA8EA /* CatAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92C11F0520E23F2E00BEA8EA /* CatAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C11F0420E23F2E00BEA8EA /* CatAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		92C11EDC20E23E9000BEA8EA /* AlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		92C11EDF20E23E9000BEA8EA /* AlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertController.h; sourceTree = "<group>"; };
+		92C11EDC20E23E9000BEA8EA /* CatAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C11EDF20E23E9000BEA8EA /* CatAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatAlertController.h; sourceTree = "<group>"; };
 		92C11EE020E23E9000BEA8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92C11F0420E23F2E00BEA8EA /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		92C11F0420E23F2E00BEA8EA /* CatAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 		92C11EDD20E23E9000BEA8EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92C11EDC20E23E9000BEA8EA /* AlertController.framework */,
+				92C11EDC20E23E9000BEA8EA /* CatAlertController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -49,8 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				92C11EE020E23E9000BEA8EA /* Info.plist */,
-				92C11EDF20E23E9000BEA8EA /* AlertController.h */,
-				92C11F0420E23F2E00BEA8EA /* AlertController.swift */,
+				92C11EDF20E23E9000BEA8EA /* CatAlertController.h */,
+				92C11F0420E23F2E00BEA8EA /* CatAlertController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -62,16 +62,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C11EED20E23E9000BEA8EA /* AlertController.h in Headers */,
+				92C11EED20E23E9000BEA8EA /* CatAlertController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		92C11EDB20E23E9000BEA8EA /* AlertController */ = {
+		92C11EDB20E23E9000BEA8EA /* CatAlertController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92C11EF020E23E9000BEA8EA /* Build configuration list for PBXNativeTarget "AlertController" */;
+			buildConfigurationList = 92C11EF020E23E9000BEA8EA /* Build configuration list for PBXNativeTarget "CatAlertController" */;
 			buildPhases = (
 				92C11ED720E23E9000BEA8EA /* Sources */,
 				92C11ED820E23E9000BEA8EA /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = AlertController;
+			name = CatAlertController;
 			productName = AlertController;
-			productReference = 92C11EDC20E23E9000BEA8EA /* AlertController.framework */;
+			productReference = 92C11EDC20E23E9000BEA8EA /* CatAlertController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 92C11ED620E23E9000BEA8EA /* Build configuration list for PBXProject "AlertController" */;
+			buildConfigurationList = 92C11ED620E23E9000BEA8EA /* Build configuration list for PBXProject "CatAlertController" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92C11EDB20E23E9000BEA8EA /* AlertController */,
+				92C11EDB20E23E9000BEA8EA /* CatAlertController */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C11F0520E23F2E00BEA8EA /* AlertController.swift in Sources */,
+				92C11F0520E23F2E00BEA8EA /* CatAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +272,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AlertController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -280,7 +280,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.AlertController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.CatAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -299,7 +299,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AlertController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,7 +307,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.AlertController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.CatAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -318,7 +318,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92C11ED620E23E9000BEA8EA /* Build configuration list for PBXProject "AlertController" */ = {
+		92C11ED620E23E9000BEA8EA /* Build configuration list for PBXProject "CatAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92C11EEE20E23E9000BEA8EA /* Debug */,
@@ -327,7 +327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92C11EF020E23E9000BEA8EA /* Build configuration list for PBXNativeTarget "AlertController" */ = {
+		92C11EF020E23E9000BEA8EA /* Build configuration list for PBXNativeTarget "CatAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92C11EF120E23E9000BEA8EA /* Debug */,

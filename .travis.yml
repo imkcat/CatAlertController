@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode9.4
+script: 
+- |
+  xcodebuild clean build -destination 'platform=iOS Simulator,name=iPhone X' -workspace AlertController.xcworkspace -scheme AlertController-iOS CODE_SIGNING_REQUIRED=NO

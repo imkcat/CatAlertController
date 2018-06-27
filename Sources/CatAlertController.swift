@@ -1,5 +1,5 @@
 //
-//  AlertController.swift
+//  CatAlertController.swift
 //  Story
 //
 //  Created by Kcat on 2018/3/3.
@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-/// The `AlertController` is a high level manager object for `UIAlertController`.
-public class AlertController: NSObject {
+/// The `CatAlertController` is a high level manager object for `UIAlertController`.
+public class CatAlertController: NSObject {
 
     /// Instance of the source `UIAlertController`.
     public var alertController: UIAlertController
@@ -18,11 +18,11 @@ public class AlertController: NSObject {
     /// The source view controller.
     public var fromViewController: UIViewController?
 
-    /// Create an `AlertController` instance.
+    /// Create an `CatAlertController` instance.
     ///
     /// - Parameters:
-    ///   - title: Title text of the `AlertController`.
-    ///   - message: Message text of the `AlertController`.
+    ///   - title: Title text of the `CatAlertController`.
+    ///   - message: Message text of the `CatAlertController`.
     ///   - preferredStyle: The style for the presenting style.
     public init(title: String? = nil,
          message: String? = nil,
@@ -34,32 +34,21 @@ public class AlertController: NSObject {
         }
     }
 
-    /// Add single `UIAlertAction` to the `AlertController`.
+    /// Add single `UIAlertAction` to the `CatAlertController`.
     ///
     /// - Parameter action: The `UIAlertAction` for adding.
-    /// - Returns: Instance of the `AlertController`.
-    public func addAction(_ action: UIAlertAction) -> AlertController {
+    /// - Returns: Instance of the `CatAlertController`.
+    public func addAction(_ action: UIAlertAction) -> CatAlertController {
         self.alertController.addAction(action)
         return self
     }
-    
-    /// Add multiple `UIAlertAction` to the `AlertController`.
-    ///
-    /// - Parameter actions: The `UIAlertAction` array for adding.
-    /// - Returns: Instance of the `AlertController`.
-    public func addActions(_ actions: [UIAlertAction]) -> AlertController {
-        for action in actions {
-            self.alertController.addAction(action)
-        }
-        return self
-    }
 
-    /// Present the `AlertController`.
+    /// Present the `CatAlertController`.
     ///
     /// - Parameters:
     ///   - viewController: The source view controller.
     ///   - animated: Indicator for animation desire.
-    ///   - completion: The block will execute after `AlertController` complete presented.
+    ///   - completion: The block will execute after `CatAlertController` complete presented.
     public func present(from viewController: UIViewController,
                  animated: Bool,
                  completion:(() -> Void)? = nil) {
@@ -67,13 +56,13 @@ public class AlertController: NSObject {
         viewController.present(self.alertController, animated: animated, completion: completion)
     }
 
-    /// Present the `AlertController` and auto dismiss it with time interval.
+    /// Present the `CatAlertController` and auto dismiss it with time interval.
     ///
     /// - Parameters:
     ///   - viewController: The source view controller.
     ///   - animated: Indicator for animation desire.
     ///   - delay: Delay time interval for auto dismiss.
-    ///   - completion: The block will execute after `AlertController` complete dismissed.
+    ///   - completion: The block will execute after `CatAlertController` complete dismissed.
     public func flash(from viewController: UIViewController,
                animated: Bool,
                delay: TimeInterval = 0.75,
@@ -86,11 +75,11 @@ public class AlertController: NSObject {
         }
     }
 
-    /// Dismiss the `AlertController`.
+    /// Dismiss the `CatAlertController`.
     ///
     /// - Parameters:
     ///   - animated: Indicator for animation desire.
-    ///   - completion: The block will execute after `AlertController` complete presented.
+    ///   - completion: The block will execute after `CatAlertController` complete presented.
     public func dismiss(animated: Bool, completion:(() -> Void)? = nil) {
         self.alertController.dismiss(animated: animated, completion: completion)
     }

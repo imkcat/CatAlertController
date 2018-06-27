@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922EBFE120E3478900682985 /* CatAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922EBFE020E3478300682985 /* CatAlertController.framework */; };
+		922EBFE220E3478900682985 /* CatAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 922EBFE020E3478300682985 /* CatAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92C11EA020E23D8900BEA8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C11E9F20E23D8900BEA8EA /* AppDelegate.swift */; };
 		92C11EA220E23D8900BEA8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C11EA120E23D8900BEA8EA /* ViewController.swift */; };
 		92C11EA520E23D8900BEA8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C11EA320E23D8900BEA8EA /* Main.storyboard */; };
 		92C11EA720E23D8C00BEA8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C11EA620E23D8C00BEA8EA /* Assets.xcassets */; };
 		92C11EAA20E23D8C00BEA8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C11EA820E23D8C00BEA8EA /* LaunchScreen.storyboard */; };
 		92C11EC020E23D8C00BEA8EA /* AlertControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C11EBF20E23D8C00BEA8EA /* AlertControllerUITests.swift */; };
-		92C11F0C20E2478D00BEA8EA /* AlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C11F0B20E246AD00BEA8EA /* AlertController.framework */; };
-		92C11F0D20E2478D00BEA8EA /* AlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92C11F0B20E246AD00BEA8EA /* AlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				92C11F0D20E2478D00BEA8EA /* AlertController.framework in Embed Frameworks */,
+				922EBFE220E3478900682985 /* CatAlertController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		922EBFE020E3478300682985 /* CatAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CatAlertController.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CatAlertController-gjstxvqrphtskngvpupwtfwnykgs/Build/Products/Debug-iphoneos/CatAlertController.framework"; sourceTree = "<group>"; };
 		92C11E9C20E23D8900BEA8EA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C11E9F20E23D8900BEA8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C11EA120E23D8900BEA8EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		92C11EBB20E23D8C00BEA8EA /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C11EBF20E23D8C00BEA8EA /* AlertControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerUITests.swift; sourceTree = "<group>"; };
 		92C11EC120E23D8C00BEA8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92C11F0B20E246AD00BEA8EA /* AlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlertController.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AlertController-heovxkhqggmveiaxzaqozpoopxea/Build/Products/Debug-iphoneos/AlertController.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C11F0C20E2478D00BEA8EA /* AlertController.framework in Frameworks */,
+				922EBFE120E3478900682985 /* CatAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 		92C11F0620E2468F00BEA8EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				92C11F0B20E246AD00BEA8EA /* AlertController.framework */,
+				922EBFE020E3478300682985 /* CatAlertController.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -392,7 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.imkcat.AlertController-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imkcat.CatAlertController-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -409,7 +409,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.imkcat.AlertController-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imkcat.CatAlertController-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
