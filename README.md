@@ -21,17 +21,47 @@
 
 - [Description](#description)
 - [Requirements](#requirements)
+- [Installation](#installation)
+    - [CocoaPods](#cocoapods)
+    - [Carthage](#carthage)
 - [Usage](#usage)
 - [License](#license)
 
 ## Description
 
-The `CatAlertController` is a high level manager object for `UIAlertController`.
+CatAlertController is a high level manager object for UIAlertController.
+
 
 ## Requirements
 
 - Swift 4+
 - iOS 8.0+
+
+
+## Installation
+
+CatAlertController is available through [CocoaPods](http://cocoapods.org) and [Carthage](https://github.com/Carthage/Carthage).
+
+
+### CocoaPods
+
+Add the following line to your Podfile:
+
+```ruby
+use_frameworks!
+
+pod 'CatAlertController'
+```
+
+
+### Carthage
+
+Add the following line to your Cartfile:
+
+```ruby
+github "ImKcat/CatAlertController"
+```
+
 
 ## Usage
 
@@ -50,7 +80,7 @@ Here is the action sheet style sample code in iPad:
 
 ```swift
 // Don't worry the action sheet style present in iPad, it won't be crash, take it easy :)
-CatAlertController(title: "Action Sheet Style", 
+CatAlertController(title: "CatAlertController", 
                     message: "This is CatAlertController", 
                     preferredStyle: UIAlertControllerStyle.actionSheet)
                     .addAction(UIAlertAction(title: "Item 1", style: UIAlertActionStyle.default, handler: nil))
