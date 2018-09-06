@@ -29,7 +29,7 @@
 
 ## Description
 
-CatAlertController is a high level manager object for UIAlertController.
+CatAlertController is a high level manager object that with chaining style for UIAlertController.
 
 
 ## Requirements
@@ -71,9 +71,9 @@ Here is the alert style sample code in iPhone:
 CatAlertController(title: "CatAlertController", 
                     message: "This is CatAlertController", 
                     preferredStyle: UIAlertControllerStyle.alert)
-                    .addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
-                    .addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                    .flash(from: self, animated: true, delay: 0.3, completion: nil)
+                    .addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel))
+                    .addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default))
+                    .flash(from: self, delay: 0.3)
 ```
 
 Here is the action sheet style sample code in iPad:
@@ -83,11 +83,11 @@ Here is the action sheet style sample code in iPad:
 CatAlertController(title: "CatAlertController", 
                     message: "This is CatAlertController", 
                     preferredStyle: UIAlertControllerStyle.actionSheet)
-                    .addAction(UIAlertAction(title: "Item 1", style: UIAlertActionStyle.default, handler: nil))
-                    .addAction(UIAlertAction(title: "Item 2", style: UIAlertActionStyle.default, handler: nil))
-                    .addAction(UIAlertAction(title: "Item 3", style: UIAlertActionStyle.default, handler: nil))
-                    .addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
-                    .flash(from: self, animated: true, delay: 1, completion: nil)
+                    .addAction(UIAlertAction(title: "Item 1"))
+                    .addAction(UIAlertAction(title: "Item 2"))
+                    .addAction(UIAlertAction(title: "Item 3"))
+                    .addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel))
+                    .flash(from: self, delay: 1)
 ```
 
 ## License
