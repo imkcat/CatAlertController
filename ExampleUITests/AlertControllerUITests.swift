@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import CatAlertController
 
 class AlertControllerUITests: XCTestCase {
         
@@ -29,8 +30,46 @@ class AlertControllerUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.buttons["Alert Popup Example"].tap()
+        
+        let alertStyleFlashExampleButton = app.buttons["Alert Style Flash Example"]
+        alertStyleFlashExampleButton.tap()
+        
+        let alert = app.alerts["Alert"]
+        let cancelButton = alert.buttons["Cancel"]
+        cancelButton.tap()
+        alertStyleFlashExampleButton.tap()
+        
+        let okButton = alert.buttons["OK"]
+        okButton.tap()
+        alertStyleFlashExampleButton.tap()
+        
+        let alertStyleExampleButton = app.buttons["Alert Style Example"]
+        alertStyleExampleButton.tap()
+        cancelButton.tap()
+        alertStyleExampleButton.tap()
+        okButton.tap()
+        
+        let actionSheetStyleFlashExampleButton = app.buttons["Action Sheet Style Flash Example"]
+        actionSheetStyleFlashExampleButton.tap()
+        
+        let actionSheetSheet = app.sheets["Action Sheet"]
+        let item1Button = actionSheetSheet.buttons["Item 1"]
+        item1Button.tap()
+        actionSheetStyleFlashExampleButton.tap()
+        actionSheetStyleFlashExampleButton.tap()
+        
+        let cancelButton2 = actionSheetSheet.buttons["Cancel"]
+        cancelButton2.tap()
+        
+        let actionSheetStyleExampleButton = app.buttons["Action Sheet Style Example"]
+        actionSheetStyleExampleButton.tap()
+        item1Button.tap()
+        actionSheetStyleExampleButton.tap()
+        cancelButton2.tap()
+        
     }
     
 }

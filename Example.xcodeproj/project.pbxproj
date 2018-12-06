@@ -13,6 +13,8 @@
 		92C11EA720E23D8C00BEA8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C11EA620E23D8C00BEA8EA /* Assets.xcassets */; };
 		92C11EAA20E23D8C00BEA8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C11EA820E23D8C00BEA8EA /* LaunchScreen.storyboard */; };
 		92C11EC020E23D8C00BEA8EA /* AlertControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C11EBF20E23D8C00BEA8EA /* AlertControllerUITests.swift */; };
+		C3CF599021B960A100A7561C /* CatAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF598F21B960A100A7561C /* CatAlertController.framework */; };
+		C3CF599121B960A100A7561C /* CatAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3CF598F21B960A100A7561C /* CatAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,12 +28,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		92C11F0A20E246AB00BEA8EA /* Embed Frameworks */ = {
+		C3CF598D21B95F9E00A7561C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C3CF599121B960A100A7561C /* CatAlertController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +42,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		92404B8A20E354CA00CD7366 /* CatAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CatAlertController.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CatAlertController-gaoflexvrafylrczganjrecfqofk/Build/Products/Debug-iphoneos/CatAlertController.framework"; sourceTree = "<group>"; };
 		92C11E9C20E23D8900BEA8EA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C11E9F20E23D8900BEA8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C11EA120E23D8900BEA8EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		92C11EBB20E23D8C00BEA8EA /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C11EBF20E23D8C00BEA8EA /* AlertControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerUITests.swift; sourceTree = "<group>"; };
 		92C11EC120E23D8C00BEA8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CF598F21B960A100A7561C /* CatAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CF599221B960A400A7561C /* CatAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CatAlertController.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CatAlertController-ehlyybnvjmrextezxvtalybckvdd/Build/Products/Debug-iphoneos/CatAlertController.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CF599021B960A100A7561C /* CatAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,20 +75,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		92404B8620E354B100CD7366 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				92404B8A20E354CA00CD7366 /* CatAlertController.framework */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 		92C11E9320E23D8900BEA8EA = {
 			isa = PBXGroup;
 			children = (
+				C3CF598F21B960A100A7561C /* CatAlertController.framework */,
 				92C11E9E20E23D8900BEA8EA /* Example */,
 				92C11EBE20E23D8C00BEA8EA /* ExampleUITests */,
-				92404B8620E354B100CD7366 /* Frameworks */,
+				C3CF598321B95DC900A7561C /* Frameworks */,
 				92C11E9D20E23D8900BEA8EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +117,14 @@
 			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
+		C3CF598321B95DC900A7561C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3CF599221B960A400A7561C /* CatAlertController.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,7 +135,7 @@
 				92C11E9820E23D8900BEA8EA /* Sources */,
 				92C11E9920E23D8900BEA8EA /* Frameworks */,
 				92C11E9A20E23D8900BEA8EA /* Resources */,
-				92C11F0A20E246AB00BEA8EA /* Embed Frameworks */,
+				C3CF598D21B95F9E00A7561C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +176,11 @@
 				TargetAttributes = {
 					92C11E9B20E23D8900BEA8EA = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					92C11EBA20E23D8C00BEA8EA = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 92C11E9B20E23D8900BEA8EA;
 					};
 				};
@@ -390,7 +398,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.imkcat.CatAlertController-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -407,7 +415,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.imkcat.CatAlertController-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -417,7 +425,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlertControllerUITests/Info.plist;
+				INFOPLIST_FILE = ExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,9 +433,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.AlertControllerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AlertController;
+				TEST_TARGET_NAME = Example;
 			};
 			name = Debug;
 		};
@@ -436,7 +445,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlertControllerUITests/Info.plist;
+				INFOPLIST_FILE = ExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,9 +453,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.AlertControllerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AlertController;
+				TEST_TARGET_NAME = Example;
 			};
 			name = Release;
 		};

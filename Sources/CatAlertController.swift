@@ -26,8 +26,8 @@ public class CatAlertController: NSObject {
     ///   - preferredStyle: The style for the presenting style.
     public init(title: String? = nil,
          message: String? = nil,
-         preferredStyle: UIAlertControllerStyle = .alert) {
-        if preferredStyle == UIAlertControllerStyle.actionSheet && UIDevice.current.userInterfaceIdiom == .pad {
+         preferredStyle: UIAlertController.Style = .alert) {
+        if preferredStyle == UIAlertController.Style.actionSheet && UIDevice.current.userInterfaceIdiom == .pad {
             self.alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         } else {
             self.alertController = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
