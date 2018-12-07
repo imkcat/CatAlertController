@@ -1,5 +1,5 @@
 language: swift
-osx_image: xcode9.4
+osx_image: xcode10
 script: 
 - |
   xcodebuild clean build -destination 'platform=iOS Simulator,name=iPhone X' -workspace CatAlertController.xcworkspace -scheme CatAlertController CODE_SIGNING_REQUIRED=NO
